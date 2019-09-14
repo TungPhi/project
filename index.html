@@ -9,5 +9,13 @@
 <body>
    <h1>abc</h1> 
     <a href="./about">About</a>
+    <script >
+        fetch('./data.json')
+        .then(res =>{
+            return res.json()
+        }).then(data =>{
+            console.log(data)
+        })
+    </script>
 </body>
 </html>
